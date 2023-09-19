@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <link href='https://fonts.googleapis.com/css2?family=Source+Sans+Pro&family=Great+Vibes&family=Montserrat&family=Playfair+Display' rel='stylesheet'>
+        <link rel="stylesheet" type="text/css" href="/static/style.css"/>
+        <link rel="icon" type="image/x-icon" href="/static/cupcake.ico">
+        {% block head %}{% endblock %}
+
+    </head>
+    <body>
+        <div class="pink-bar"></div>
+        <div class="title-center">
+        <a href="/">
+            <h1 class="title"><span class="sally">Sally's</span><span class="big-byte">BIG BYTE</h1>
+        </a>
+        </div>
+        {% block content %}{% endblock %}
+    </body>
+</html>

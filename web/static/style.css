@@ -1,0 +1,95 @@
+body {
+    font-family: "Source Sans Pro";
+    margin: 0;
+    font-size: 18px;
+    height: 24vh;
+}
+
+a {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+a:hover {
+    color: #545454;
+}
+
+.title-center {
+    text-align: center;
+}
+
+
+.sally {
+    font-family: 'Great Vibes';
+    font-size: 3rem;
+    letter-spacing: 0;
+    margin-right: 15px;
+}
+
+.title {
+    display: inline-block;
+    font-family: "Montserrat";
+    font-size: 1.8rem;
+    letter-spacing: 2px;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin: 10px 0;
+}
+
+.title-center a {
+    display: inline-block;
+    transition: color 0.2s;
+}
+
+.pink-bar {
+    height: 10px;
+    width: 100%;
+    background-color: pink;
+}
+
+.header-bg {
+    background-color: #f2f2f2;
+}
+
+.gutter {
+
+    max-width: 1200px;
+    margin: auto;
+    padding: 25px 0;
+}
+
+.category {
+    font-family: "Playfair Display";
+}
+
+.column-left {
+    /* background-color: lightgrey; */
+    padding: 10px 30px 10px 0;
+    width: 60%;
+    line-height: 1.5
+}
+
+
+.recipe {
+    font-family: "Playfair Display";
+    font-size: 2.2rem;
+    font-weight: 600;
+    border-bottom: 4px solid pink;
+    display:inline-block;
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+
+.date {
+    font-size: 1rem;
+    color: grey;
+}
+
+.footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    height: 10px;
+    background-color: pink;
+}

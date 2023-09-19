@@ -1,0 +1,53 @@
+.columns {
+    display: flex;
+}
+
+.recipe-border {
+    border: 1px solid grey;
+    padding: 2px;
+    width: 66%;
+}
+
+.author-stuff {
+    display: flex;
+    align-items: center;
+}
+
+.author {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    display: inline-block;
+    border-radius: 100px;
+}
+
+.author-name {
+    font-family: "Playfair Display";
+    margin-right: 20px;
+    font-size: 1.6rem;
+}
+
+.flex-gutter {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.inner-gutter {
+    display: inline-block;
+}
+
+.recipe {
+    font-family: "Playfair Display";
+    font-size: 2.2rem;
+    font-weight: 600;
+    border-bottom: 4px solid pink;
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+
+.date {
+    font-size: 1rem;
+    color: grey;
+}

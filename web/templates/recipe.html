@@ -1,0 +1,38 @@
+{% extends "nav.html" %}
+
+{% block head %}
+<title>Recipe - {{ name }}</title>
+<link rel="stylesheet" type="text/css" href="/static/recipe.css"/>
+{% endblock %}
+
+{% block content %}
+<div class="header-bg">
+    <div class="gutter flex-gutter">
+        <div class="inner-gutter">
+            <h1 class="recipe">{{ name }}</h1><br>
+            <p class="date">{{ blog_date }}</p>
+        </div>
+
+        <div class="author-stuff">
+            <h1 class="author-name">Sally McKenny</h1>
+            <img class="author" src="https://thispersondoesnotexist.com/image">
+        </div>
+    </div>
+</div>
+<div class="gutter columns">
+    <div class="column-left">
+        <h3 class="category">Ingredients</h3>
+        <ul>
+            {% for ingredient in ingredients %}
+                <li>{{ ingredient }}</li>
+            {% endfor %}
+        </ul>
+        <h3 class="category">Recipe</h3>
+        <p>
+            {{ recipe_steps }}
+        </p>
+    </div>
+
+</div>
+
+{% endblock %}

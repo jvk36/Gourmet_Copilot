@@ -1,0 +1,34 @@
+{% extends "nav.html" %}
+
+{% block head %}
+<title>Sally's Big Byte</title>
+<link rel="stylesheet" type="text/css" href="/static/home.css"/>
+{% endblock %}
+
+{% block content %}
+    <div class="subtitle"><em>a.i. generated recipe gibberish :)</em></div>
+
+    <h1>Favorites</h1>
+    {% for recipe in favorites %}
+    <div class="recipe-outside">
+        <a href="/recipe/{{ recipe['name'].replace(' ', '-') }}">
+        <div class="recipe-box favorite">
+            <h1 class="recipe">{{ recipe['name'] }}</h1>
+            <p class="date">{{ recipe['date'] }}</p>
+        </div>
+        </a>
+    </div>
+    {% endfor %}
+
+    <h1>Recipes</h1>
+    {% for recipe in recipies %}
+    <div class="recipe-outside">
+        <a href="/recipe/{{ recipe['name'].replace(' ', '-') }}">
+        <div class="recipe-box">
+            <h1 class="recipe">{{ recipe['name'] }}</h1>
+            <p class="date">{{ recipe['date'] }}</p>
+        </div>
+        </a>
+    </div>
+    {% endfor %}
+{% endblock %}
